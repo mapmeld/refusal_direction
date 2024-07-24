@@ -26,7 +26,7 @@ check_python() {
 
 setup_hf() {
     echo "Please enter your Hugging Face token (press Enter to skip):"
-    read -r token
+    # read -r token
     if [ -n "$token" ]; then
         echo "Storing HF_TOKEN in .env file..."
         echo "HF_TOKEN=$token" >> .env
@@ -42,7 +42,7 @@ setup_hf() {
 
 setup_together() {
     echo "Please enter your Together AI token (press Enter to skip):"
-    read -r token
+    # read -r token
     if [ -n "$token" ]; then
         echo "Storing TOGETHER_API_KEY in .env file..."
         echo "TOGETHER_API_KEY=$token" >> .env
